@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var person={
+				name:"小明",
+				age:19,
+				sex:"男",
+				show:function (){
+					document.write("姓名是："+person.name+",年龄是："+person.age+"性别为："+person.sex);
+				}
+			};		
+			person.show();
+			var people={
+				name:"张三",
+				age:30,
+				sex:"男"
+			};
+			function show_two(){
+				document.write("姓名是："+people.name+",年龄是："+people.age+"性别为："+person.sex);
+			}
+			show_two();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

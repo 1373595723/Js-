@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/**
+			 * 通过对象字面量创建
+			 */
+//			var person={
+//				name:"小明",
+//				age:19,
+//				sex:"男",
+//				show:function (){
+//				document.write("姓名是："+person.name+",年龄是："+person.age+"性别为："+person.sex);
+//				}
+//			};		
+//			person.show();
+			function Master(){
+			    this.blood = 100;
+			    this.level = 6;
+			}
+			console.log(Master.blood);
+			var noumenon = new Master();
+			noumenon.level = 9;
+			
+			
+			var ektype = Object.create(noumenon);
+			
+			console.log(ektype);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

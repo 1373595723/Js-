@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--例一-->
+		<script>
+			var xiaoming={
+				name:"小明",		//属性，姓名
+				age:18,			//属性，年龄
+				sex:"男",		//属性，性别
+				sayHi:function(){
+					alert("你好！");
+				}
+			}
+		</script>
+		<!--例二-->
+		<script>
+			var xiaoming=new Object();
+			xiaoming.name="小明";			//属性，姓名
+			xiaoming.age=18;				//属性，年龄
+			xiaoming.sex="男";				//属性，性别
+			xiaoming.sayHi=function(){		//方法
+				alert("你好！");
+			}
+		</script>
+		<!--例三-->
+		<script>
+			function Student(name){
+				this.name=name;
+				this.hello=function(){
+					alert('Hello'+this.name+'!');
+				}
+			}
+			var xiaoming=new Student('小明');
+			var xiaohong=new Student('小红');
+		</script>
+		<!--例四-->
+		<script>
+			var xiaoming={
+				name:"小明",				//属性，姓名
+				age:18,					//属性，年龄
+				sex:"男",				//属性，性别
+				sayHi:function(){		//方法
+					alert("你好！");
+				}
+			};
+			//.语法
+			console.log(xiaoming.name);		//小明
+			console.log(xiaoming.age);		//18
+			console.log(xiaoming.sex);		//男
+			//[]语法
+			console.log(xiaoming["name"]);		//小明
+			console.log(xiaoming["age"]);		//18
+			console.log(xiaoming["sex"]);		//男
+		</script>
+		<!--例五-->
+		<script>
+			var xiaoming={
+				name:"小明",					//属性，姓名
+				age:18,						//属性，年龄
+				sex:"男",						//属性，性别
+				sayHi:function(){
+					alert("你好！");
+				}
+			};
+			xiaoming.sayHi();
+		</script>
+		<!--例六-->
+		<script>
+			function Student(name){
+				this.name=name;
+			}
+			Student.prototype.read=function(){
+				alert("读书");
+			}
+			var xiaoming=new Student('小明');
+			var xiaohong=new Student('小红');
+			console.log(xiaoming.name);                 //小明
+			console.log(xiaohong.name);                 //小红
+			xiaoming.read();     //读书
+			xiaohong.read();     //读书
+		</script>
+		<!--例七-->
+		<script>
+			Student.prototype.read=function(){
+				alert("read");
+			}
+			xiaoming.read();          //read
+			xiaohong.read();          //read
+		</script>
+		<!--例八-->
+		<script>
+			xiaoming.read=function(){
+				alert("阅读");
+			}
+			xiaoming.read();      //阅读
+			xiaohong.read();      //阅读
+		</script>
+		<!--例九-->
+		<script>
+			var xiaoming={
+				name:"小明",
+				age:18,
+				sex:"男",
+				sayHi:function(){
+					alert("你好！");
+				}
+			}
+			for (var x in xiaoming) {
+				console.log(x+"="+xiaoming[x]);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<!--例一-->
+		<script>
+			var  fruit1="苹果";
+			var  fruit2="香蕉";
+			var  fruit3="梨";
+		</script>
+		<!--例二-->
+		<script>
+			//常规方法
+			var fruit=new Array();
+			fruit[0]="苹果";
+			fruit[1]="香蕉";
+			fruit[2]="梨";
+			console.log(fruit);//['苹果','香蕉','梨']
+			//简洁方法
+			var fruit=new Array("苹果","香蕉","梨");
+			console.log(fruit);//['苹果','香蕉','梨']
+			//字面量方法
+			var fruit=['苹果','香蕉','梨'];
+			console.log(fruit);//['苹果','香蕉','梨']
+		</script>
+		<!--例三-->
+		<script>
+			var myArray=[1,2,3,4,5]
+			console.log(myArray[0]);//1
+			console.log(myArray[1]);//2
+			console.log(myArray[2]);//3
+		</script>
+		<!--例四-->
+		<script>
+			var myArray=[1,2,3,4,5];
+			for (var i=0;i<myArray.length;i++) {
+				document.write(myArray[i]+"<hr />")
+			}
+		</script>
+		<!--例五 indexOf()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.indexOf(3));//放回2
+			console.log(arr.indexOf(6));//返回-1
+		</script>
+		<!--例六  concat();-->
+		<script>
+			var arr1=[,2,3,4,5];
+			var arr2=[6,7,8];
+			console.log(arr1.concat(arr2));//[1,2,3,4,5,6,7,8]
+			console.log(arr1);//[1,2,,3,4,5]
+			console.log(arr2);//[6,7,8]
+		</script>
+		<!--例七 join();-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.join());//1,2,3,4,5
+			console.log(typeof arr.join());//返回String
+			console.log(arr.join("*"));//1*2*3*4*5
+		</script>
+		<!--例八 pop()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.pop());//返回5
+			console.log(arr);//[1,2,3,4]
+		</script>
+		<!--例九 push()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.push(6,7));//返回7
+			console.log(arr);//返回[1,2,3,4,5,6,7];
+		</script>
+		<!--例十 slice()-->
+		<script>
+			var arr=[1,2,3,4,5,6,7,8];
+			console.log(arr.slice(2,5));//返回[3,4,5]
+			console.log(arr.slice(2));//返回[3,4,5,6,7,8]
+			console.log(arr);//返回[1,2,3,4,5,6,7,8]
+		</script>
+		<!--例十一 splice()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.splice(2,1));//删除，返回[3]
+			console.log(arr);//返回[1,2,4,5]
+			console.log(arr.splice(2,0,7,8));//插入，返回[]
+			console.log(arr);//返回[1,2,7,8,4,5]
+			console.log(arr.splice(2,1,9));//替换，返回[]
+			console.log(arr);//返回[1,2,9,8,4,5]
+		</script>
+		<!--例十二 sort()-->
+		<script>
+			var arr=[1,2,3,4,5,6]
+			console.log(arr.sort());//[]
+			console.log(arr.sort(function(a,b){return a-b}));//升序
+			console.log(arr.sort(function(a,b){return b-a}));//降序
+		</script>
+		<!--例十三 reverse()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.reverse());//返回[5,4,3,2,1];
+		</script>
+		<!--例十四 shift()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.shift());//返回1
+			console.log(arr);//返回[2,3,4,5]
+		</script>
+		<!--例十五 unshift()-->
+		<script>
+			var arr=[1,2,3,4,5];
+			console.log(arr.unshift(-1,0));//返回7
+			console.log(arr);//返回[-1,0,1,2,3,4,5]
+		</script>
+	</body>
+</html>

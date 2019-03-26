@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--使用for循环实现-->
+		<script>
+			var sum=0;
+			for(var num=1;num<=100;num++){
+				if(num%2==0){
+					sum+=num;
+				}
+				if(sum>2000){
+					break;
+				}
+			}
+			console.log(sum);
+		</script>
+		<!--使用while实现-->
+		<!--<script>
+			var sum=0;
+			var num=1;
+			while(num<=100){
+				if(num%2==0){
+					sum+=num;
+				}
+				num++;
+				if(sum>2000){
+					break;	
+				}			
+			}
+			console.log(sum);
+		</script>-->
+	</head>
+	<body>
+	</body>
+</html>

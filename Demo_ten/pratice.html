@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button name="btn" id="btn" onclick="oc()">查看浏览器信息</button>
+		<script>
+			var btn=document.getElementById("btn");
+			function oc(){
+				window.open("navigator.html","new","width=450,height=450");
+			}
+			setTimeout(function(){
+				if(oc!=window.closed){
+					window.close();
+				}
+			},8000);
+			setTimeout(oc,3000);
+		</script>
+	</body>
+</html>

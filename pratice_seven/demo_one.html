@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function person(name,age){
+				this.name=name;
+				this.age=age;
+				person.prototype.show=function(){
+					document.write(this.name+"的年龄是"+this.age);
+				};
+			}
+			var xiaoming=new person("小明","30");
+			xiaoming.show();
+			document.write("<br />");
+			var xiao=new person("小明","20");
+			person.prototype.show=function(){
+				document.write("姓名是："+this.name+"年龄是"+this.age);
+			};
+			xiao.show();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

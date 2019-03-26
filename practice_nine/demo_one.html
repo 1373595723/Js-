@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var shows=["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361°腰包"];
+			document.write("本次打折的商品有：<br />");
+			for(var i=0;i<shows.length;i++){
+				document.write(shows[i]+"<br />");
+			}
+			
+			var shows_two=["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361°腰包"];
+			document.write("商场商品做出改变后，本次打折的商品有：<br />");
+			shows_two.shift();
+			shows_two.push("Adidas运动鞋");
+			for(var i=0;i<shows_two.length;i++){
+				document.write(shows_two[i]+"<br />");
+			}
+			
+			var shows_three=["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361°腰包"];
+			document.write("商场商品做出改变后，本次打折的商品有：<br />");
+			shows_three.shift();
+			shows_three.push("Adidas运动鞋");
+			shows_three.splice(1,1,"特步运动鞋")
+			for(var i=0;i<shows_three.length;i++){
+				document.write(shows_three[i]+"<br />");
+			}
+			
+			var shows_fourth=["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361°腰包"];
+			document.write("商场商品做出改变后，本次打折的商品有：<br />");
+			shows_fourth.shift();
+			shows_fourth.push("Adidas运动鞋");
+			shows_fourth.splice(1,1,"特步运动鞋");
+			document.write(shows_fourth.join("、"));
+			
+		</script>
+	</body>
+</html>

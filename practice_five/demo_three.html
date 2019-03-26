@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var height=window.prompt("请输入三角形的高");
+			for(var a=1;a<=height;a++){
+				for(var b=height;b>=a;b--){
+					document.write("*");
+				}
+				for(var d=0;d<a-1;d++){
+					if(a==1){
+						break;
+					}else{
+						document.write(d);
+					}				
+				}
+				for(var b=a-1;b>=0;b--){
+					document.write(b);
+				}
+				document.write("<br />")
+			}
+//			for(var a=0;a<=6;a++){
+//				for(var b=6;b>a;b--){
+//					document.write("*");
+//				}
+//				for(var c=0;c<=a;c++){
+//					document.write(c);
+//				}
+//				for(var d=a-1;d>=0;d--){
+//					document.write(d);
+//				}
+//				document.write("<br />")
+//			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

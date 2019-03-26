@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--输入一个五位数确定是不是回文数-->
+		<!--个位与万位相同，十位与千位相同-->
+		<script>
+			do{
+				var num=window.prompt("请输入一个五位数：","");
+				console.log(num);
+				var wan=num/10000;
+				var qian=num/1000%10;
+				var shi=num/10%10;
+				var ge=num%10;
+				var boolean=num=="";
+			}while (num<0||num>99999||boolean||num<10||num<100||num<1000||num<10000);
+			if(parseInt(wan)==parseInt(ge)&&parseInt(qian)==parseInt(shi)){
+			console.log("是回文数");
+			}else{
+			console.log("不是回文数");
+			}
+		</script>
+	</body>
+</html>

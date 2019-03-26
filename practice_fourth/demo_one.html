@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var bookM=59.00;
+			var penM=30.00;
+			var glassesM=199.00;
+			var milkM=68.00;
+			var bookNum=prompt("请输入购买的《JavaScript》书的数量：",2);
+			var penNum=prompt("请输入购买的钢笔的数量：",3);
+			var glassesNum=prompt("请输入购买的眼镜的数量：",1);
+			var milkNum=prompt("请输入购买的牛奶的数量：",4)
+			var bTotal;
+			var pTotal;
+			var gTotal;
+			var mTotal;
+		
+			if(bookNum>=4){
+				bTotal=bookM*0.65*bookNum;
+			}else if(bookNum==3){
+				bTotal=bookM*0.7*bookNum;
+			}if(bookNum==2){
+				bTotal=bookM*0.8*bookNum;
+			}else {
+				bTotal=bookM*0.9*bookNum;
+			}
+			console.log(bTotal);
+			if(penNum>=4){
+				pTotal=penM*0.65*penNum;
+			}else if(penNum==3){
+				pTotal=penM*0.7*penNum;
+			}else if(penNum==2){
+				pTotal=penM*0.8*penNum;
+			}else {
+				pTotal=penM*0.9*penNum;
+			}
+			console.log(pTotal);
+			if(glassesNum>=4){
+				gTotal=glassesM*0.65*glassesNum;
+			}else if(glassesNum==3){
+				gTotal=glassesM*0.7*glassesNum;
+			}else if(glassesNum==2){
+				gTotal=glassesM*0.8*glassesNum;
+			}else {
+				gTotal=glassesM*0.9*glassesNum;
+			}
+			console.log(gTotal);
+			if(milkNum>=4){
+				mTotal=milkM*0.65*milkNum;
+			}else if(milkNum==3){
+				mTotal=milkM*0.7*milkNum;
+			}else if(milkNum==2){
+				mTotal=milkM*0.8*milkNum;
+			}else {
+				mTotal=milkM*0.9*milkNum;
+			}
+			console.log(mTotal);
+			var Total=bTotal+pTotal+gTotal+mTotal;
+			alert("总金额为："+Total.toFixed(1));
+		</script>
+	</body>
+<ml>

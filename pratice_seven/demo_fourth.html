@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var person={
+				name:"小明",
+				age:20,
+				sex:"男",
+				addr:"郑州市龙湖镇",
+				tel:"15813483789"
+			};
+			show=function(){
+				for(var x in person){
+					document.write(x+":"+person[x]+"<br />");
+				}
+			};
+			show();
+			person.prototype.show=function(){
+				
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

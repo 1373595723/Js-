@@ -1,0 +1,53 @@
+/**
+ * date：3/7    周四
+ *第一章 
+ */
+JS入口函数
+window.onload=function(){};
+入口函数是在浏览器将整张页面加载完成后，再执行入口函数中的代码
+引入方式：1：script标签       2.外部引入JavaScript代码	3.HTML中直接引入
+调试的四种方法：
+1.	window.alert（）使用弹出框
+2.	document.write（）向页面输出你的值
+3.	console.log()使用控制台
+4.	inner HTML元素属性
+/**
+ * 3/11 第六章
+ */
+/**
+ * 立即函数
+ */
+在普通函数的基础上添加一个小括号，先使用小括号将函数括起来，
+在函数后在添加一个小括号。注：函数名可有可无
+例如：（function 函数名（）{
+	方法体；
+}） （）；
+/**
+ * data:3/12
+ *第七章
+ */
+如果构造函数与原型中有相同的方法，则调用原型方法vi案例
+/**
+ * 第十章  BOM 3/14
+ */
+//ie兼容 获取浏览器宽高
+var w=document.body.clientWidth;
+var h=document.body.clientHeight;
+var w1=document.documentElement.clientWidth;
+var h1=document.documentElement.clientHeight;
+var w=window.innerWidth;
+var h=window.innerHeight;
+var w=window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+var h=window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+window.open;
+winow.close;
+window.moveTo;
+window.resizeTo;
+.focus;//获取焦点
+location通过href重定向
+location.reload(值);//刷新值为true,通过服务器刷新,值为false,通过缓存刷新
+/**
+ *十一章
+ */
+每个元素节点的值为null后undefined；
+children获取子元素，child Nodes获取子节点

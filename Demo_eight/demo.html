@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--例一-->
+		<script>
+			//直接赋值
+			var txt="我是被新创建的字符串";
+			console.log(txt);//"我是被新创建的字符串"
+			console.log(typeof txt);//string 
+			//new String()
+			var txt=new String("我是被创建的字符串");
+			console.log(txt);//"我是被新创建的字符串"
+			console.log(typeof txt);//object	
+		</script>
+		<!--例二-->
+		<script>
+			var txt="\'我是单引号\'\n我是换行\n\"我是双引号\"";
+			alert(txt);
+		</script>
+		<!--例三-->
+		<script>
+			str="JavaScript";
+			console.log(str.charAt(3));//返回“a”
+			console.log(str.charAt(11));//返回“ ”
+		</script>
+		<!--例四-->
+		<script>
+			var str1="Hello ";
+			var str2="JavaScript";
+			console.log(str1.concat(str2));//返回“Hello JavaScript”
+			console.log(str1+str2);//返回“Hello JavaScript”
+		</script>
+		<!--例五-->
+		<script>
+			var str="Hello javaScript！"
+			console.log(str.indexOf("Hello"))//返回0
+			console.log(str.indexOf("JavaScript"))//返回-1
+			console.log(str.indexOf("javaScript"))//返回6
+		</script>
+		<!--例六-->
+		<script>
+			var str="Hello Word";
+			console.log(str.replace("word","javaScript;"));//返回"hello javascript"
+		</script>
+		<!--例七-->
+		<script>
+			var str="hello happy world";
+			console.log(str.slice(6,11));//返回"happy"
+			console.log(str.slice(-6,-11));//返回"world"
+			console.log(str.slice(6));//返回"happy world"
+		</script>
+		<!--例八-->
+		<script>
+			var str="hello word";
+			console.log(str.split(""));
+			//返回["h","e","l","l","o","","w","o","r","d"]
+			console.log(str.split(" "));//返回["hello","world"]
+		</script>
+		<!--例九-->
+		<script>
+			var str="hello javascript";
+			console.log(str.substr(6));//返回JavaScript
+			console.log(str.substr(6,4));//返回Java
+		</script>
+		<!--例十-->
+		<script>
+			var str="hello  javascript";
+			console.log(str.substring(6));//返回"JavaScript"
+			console.log(str.substring(6,10));//返回"Java"
+		</script>
+		<!--例十一-->
+		<script>
+			var str="HELLO JAVASCRIPT";
+			console.log(str.toLowerCase());//返回"hello JavaScript"
+		</script>
+		<!--例十二-->
+		<script>
+			var str="hello JavaScript";
+			console.log(str.toUpperCase());//返回"HELLO JAVASCRIPT"
+		</script>
+	</body>
+</html>
